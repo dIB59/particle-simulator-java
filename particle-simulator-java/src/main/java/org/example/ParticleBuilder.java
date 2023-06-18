@@ -6,7 +6,7 @@ public class ParticleBuilder {
     private double y = 0;
     private double xVelocity = 0;
     private double yVelocity = 0;
-
+    private  int radius = 0;
     public ParticleBuilder x(double x) {
         this.x = x;
         return this;

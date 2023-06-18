@@ -57,4 +57,5 @@ public class Particle {
     public void setyVelocity(double yVelocity) {
         this.yVelocity = yVelocity;
     }
+
 }
