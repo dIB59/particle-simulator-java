@@ -21,6 +21,8 @@ class ParticleTest {
                 .x(1).y(1).xVelocity(1).yVelocity(1).build();
         assertEquals(1, particleOne.getX());
         assertEquals(1, particleOne.getY());
+
+        
         assertEquals(1, particleOne.getxVelocity());
         assertEquals(1, particleOne.getyVelocity());
     }
