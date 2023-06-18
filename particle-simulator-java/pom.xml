@@ -13,6 +13,7 @@
         <maven.compiler.target>20</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -25,6 +26,11 @@
             <artifactId>playn-core</artifactId>
             <version>1.0</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.playn</groupId>
+            <artifactId>playn-scene</artifactId>
+            <version>2.0</version>
         </dependency>
     </dependencies>
 
