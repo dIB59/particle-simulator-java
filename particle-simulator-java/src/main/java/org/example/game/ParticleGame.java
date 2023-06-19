@@ -24,7 +24,7 @@ import playn.scene.ImageLayer;
 import playn.scene.SceneGame;
 import react.Slot;
 
-public class ParticleGame extends SceneGame {
+public class HelloGame extends SceneGame {
 
     public class Pea {
         // choose a semi-random angular velocity
@@ -47,11 +47,16 @@ public class ParticleGame extends SceneGame {
 
     public final Pointer pointer;
 
-    public ParticleGame(Platform plat) {
+    public HelloGame(Platform plat) {
         super(plat, 25); // 25 millis per frame = ~40fps
 
         // combine mouse and touch into pointer events
-        pointer = new Pointer(plat);
+        pointer = new Pointer(plat) {
+            @Override
+            public void setListener(Listener listener) {
+
+            }
+        };
 
         // create and add background image layer
         Image bgImage = plat.assets().getImage("images/bg.png");
