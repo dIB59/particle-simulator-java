@@ -22,7 +22,7 @@ import org.robovm.apple.uikit.UIInterfaceOrientationMask;
 import org.robovm.apple.uikit.UIScreen;
 import org.robovm.apple.uikit.UIWindow;
 
-import RoboPlatform;
+import playn.robovm.RoboPlatform;
 
 public class HelloGameRoboVM extends UIApplicationDelegateAdapter {
 
@@ -53,3 +53,4 @@ public class HelloGameRoboVM extends UIApplicationDelegateAdapter {
         pool.close();
     }
 }
+

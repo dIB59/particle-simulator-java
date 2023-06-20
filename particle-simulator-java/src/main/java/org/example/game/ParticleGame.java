@@ -26,6 +26,7 @@ import playn.scene.ImageLayer;
 import playn.scene.SceneGame;
 
 public class ParticleGame extends SceneGame {
+
     public class Pea {
         // choose a semi-random angular velocity
         private final float angVel = (plat.tick() % 10 - 5) / 1000f;
@@ -51,12 +52,7 @@ public class ParticleGame extends SceneGame {
         super(plat, 25); // 25 millis per frame = ~40fps
 
         // combine mouse and touch into pointer events
-        pointer = new Pointer(plat) {
-            @Override
-            public void setListener(Listener listener) {
-
-            }
-        };
+        pointer = new Pointer(plat);
 
         // create and add background image layer
         Image bgImage = plat.assets().getImage("images/bg.png");
