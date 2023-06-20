@@ -15,6 +15,8 @@
  */
 package org.example.game;
 
+import react.Slot;
+
 import playn.core.Clock;
 import playn.core.Image;
 import playn.core.Platform;
@@ -22,10 +24,8 @@ import playn.core.Pointer;
 import playn.scene.GroupLayer;
 import playn.scene.ImageLayer;
 import playn.scene.SceneGame;
-import react.Slot;
 
-public class HelloGame extends SceneGame {
-
+public class ParticleGame extends SceneGame {
     public class Pea {
         // choose a semi-random angular velocity
         private final float angVel = (plat.tick() % 10 - 5) / 1000f;
@@ -47,7 +47,7 @@ public class HelloGame extends SceneGame {
 
     public final Pointer pointer;
 
-    public HelloGame(Platform plat) {
+    public ParticleGame(Platform plat) {
         super(plat, 25); // 25 millis per frame = ~40fps
 
         // combine mouse and touch into pointer events

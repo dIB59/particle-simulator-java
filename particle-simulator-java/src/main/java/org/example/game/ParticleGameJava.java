@@ -2,10 +2,10 @@ package org.example.game;
 
 import playn.java.LWJGLPlatform;
 
-public class HelloGameJava {
+public class ParticleGameJava {
     public static void main(String[] args) {
         LWJGLPlatform plat = new LWJGLPlatform(new LWJGLPlatform.Config());
-        new HelloGame(plat);
+        new ParticleGame(plat);
         plat.start();
     }
 }
